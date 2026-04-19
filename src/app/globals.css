@@ -1,26 +1,165 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #080b14;
+  --card: #121a2b;
+  --text: #eff4ff;
+  --muted: #b9c6e8;
+  --brand: #70d7ff;
+  --brand-2: #9d7cff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #17243f, #080b14 52%);
+  color: var(--text);
+  font-family: "Tahoma", "Segoe UI", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  width: min(1100px, 92%);
+  margin: 2.5rem auto 3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: linear-gradient(160deg, #132039, #0f1629);
+  border: 1px solid #253556;
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 25%);
+}
+
+.hero {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 260px 1fr;
+  align-items: center;
+}
+
+.logoWrap {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.logo {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: #0d1231;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  border-radius: 14px;
+  padding: 1.3rem;
+  text-align: center;
+  font-size: 1.45rem;
+}
+
+.tag {
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.65rem;
+}
+
+p,
+li,
+span {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding-inline-start: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.miniCard {
+  border: 1px solid #29385b;
+  background: #121b30;
+  border-radius: 14px;
+  padding: 0.9rem;
+}
+
+.figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid #283a64;
+  background: #0b1222;
+}
+
+.cover {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+figcaption {
+  padding: 0.65rem 0.8rem 0.9rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.note {
+  margin-top: 0;
+}
+
+.mediaSection .videoWrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid #29385b;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.videoWrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.audio {
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .grid.two,
+  .grid.three {
+    grid-template-columns: 1fr;
+  }
 }
