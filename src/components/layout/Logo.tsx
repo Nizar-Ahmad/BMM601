@@ -13,7 +13,7 @@ export default function Logo({
 }) {
   const { theme } = useTheme();
 
-  const logoSrc = theme === "dark" ? "/logo/light.png" : "/logo/dark.png";
+  const logoSrc = theme === "light" ? "/logo/light.png" : "/logo/dark.png";
 
   return (
     <Link
