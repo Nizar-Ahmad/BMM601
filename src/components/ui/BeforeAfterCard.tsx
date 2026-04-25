@@ -30,7 +30,8 @@ export default function BeforeAfterCard({
           style={{ borderColor: "var(--border)" }}
         >
           <LabelBadge text={beforeLabel} />
-          <div className="relative mt-4 h-44 overflow-hidden rounded-2xl">
+          <div className="relative mt-4 aspect-[4/3] overflow-hidden rounded-2xl">
+            {" "}
             <Image
               src={beforeSrc}
               alt={beforeLabel}
@@ -43,7 +44,8 @@ export default function BeforeAfterCard({
 
         <div className="p-6">
           <LabelBadge text={afterLabel} />
-          <div className="relative mt-4 h-44 overflow-hidden rounded-2xl">
+          <div className="relative mt-4 aspect-[4/3] overflow-hidden rounded-2xl">
+            {" "}
             <Image
               src={afterSrc}
               alt={afterLabel}
