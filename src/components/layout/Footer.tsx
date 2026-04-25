@@ -59,11 +59,6 @@ export default function Footer() {
                 GenMedia AI
               </p>
               <h2 className="text-xl font-bold">SVU S25 ITE BMM601</h2>
-              <p className="text-sm opacity-75">
-                {isArabic
-                  ? "مشروع جامعي ثابت غني بالوسائط المتعددة"
-                  : "A static multimedia university project"}
-              </p>
             </div>
 
             <div className="space-y-1 text-sm">
