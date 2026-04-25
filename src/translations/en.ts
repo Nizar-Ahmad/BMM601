@@ -12,6 +12,7 @@ const en: Translation = {
         gallery: "Gallery",
         project: "About Project",
     },
+
     common: {
         language: "Language",
         theme: "Theme",
@@ -21,194 +22,227 @@ const en: Translation = {
         learnMore: "Learn more",
         explore: "Explore",
     },
+
     home: {
-        badge: "A multimedia-rich educational website",
+        badge: "Educational multimedia website",
         heroTitle: "GenMedia AI",
         heroSubtitle:
-            "A modern educational platform that explains generative AI and its applications in creating images, audio, and video within multimedia systems through a clear academic style and a rich visual experience.",
+            "GenMedia AI is a static educational website that presents generative artificial intelligence and its role in producing images, audio, and video for modern multimedia systems. The website combines academic explanation, visual examples, and interactive media elements in a clear and accessible structure.",
         heroPrimaryBtn: "Start Exploring",
         heroSecondaryBtn: "View Gallery",
 
-        introTitle: "Introduction to Generative AI",
+        introTitle: "Generative AI in Multimedia",
         introText:
-            "Generative AI refers to systems capable of producing new content based on the data they were trained on, such as text, images, audio, and videos. It has become one of the most influential areas of artificial intelligence in building modern multimedia experiences.",
+            "Generative artificial intelligence has become an important part of digital media production. Instead of only analyzing information, generative systems can create new outputs such as illustrations, voice narration, background music, video scenes, and visual design elements. This makes them useful in education, advertising, content creation, web design, and interactive applications.",
 
-        contentTypesTitle: "Types of Generatable Content",
+        contentTypesTitle: "Types of Content Produced by Generative AI",
         contentTypesText:
-            "Generative models can support the production of multiple kinds of digital content, making them useful in design, education, marketing, and multimedia creation.",
+            "Generative AI tools can support several forms of digital production. In multimedia projects, this means combining generated or enhanced images, synthesized audio, edited video, and explanatory text into one coherent communication experience.",
 
         imageCardTitle: "Images",
         imageCardText:
-            "Generate new visuals from text prompts, enhance digital images, and apply different artistic or visual styles.",
+            "Generative AI can create illustrations, concept art, posters, digital backgrounds, and enhanced image versions based on written descriptions or existing visual references.",
 
         audioCardTitle: "Audio",
         audioCardText:
-            "Produce digital voice-over, music composition, and sound effects that enrich interactive experiences.",
+            "Audio generation tools can produce voice-over narration, background music, sound effects, and spoken educational content that supports multimedia presentations.",
 
         videoCardTitle: "Video",
         videoCardText:
-            "Create short videos, animate scenes, and produce educational or promotional visual content faster.",
+            "Video-oriented AI tools assist in creating short clips, improving scenes, generating motion, adding captions, and supporting editing workflows.",
 
-        multimediaCardTitle: "Multimedia",
+        multimediaCardTitle: "Integrated Multimedia",
         multimediaCardText:
-            "Combine text, image, audio, and video into one integrated experience that communicates ideas more effectively.",
+            "The strongest value appears when text, image, sound, and video are combined into a unified learning experience that communicates information clearly and visually.",
 
-        workflowTitle: "How Does Generative AI Work?",
+        workflowTitle: "From Prompt to Multimedia Output",
         workflowText:
-            "Generative models are trained on large amounts of data, then use user input to produce new content that follows the patterns learned during training.",
+            "Most generative AI workflows begin with a prompt or input material. The model interprets the request, connects it with learned patterns, produces an initial output, and allows the user to refine the result through additional instructions or editing.",
 
-        workflowStep1Title: "User Prompt",
+        workflowStep1Title: "Input Description",
         workflowStep1Text:
-            "The process begins when the user writes a prompt describing the requested idea or expected output.",
+            "The process begins with a written prompt, image reference, audio idea, or video concept that describes the intended result.",
 
-        workflowStep2Title: "Analysis and Processing",
+        workflowStep2Title: "Model Interpretation",
         workflowStep2Text:
-            "The model analyzes the input words or data and connects them with patterns learned previously.",
+            "The model analyzes the input and identifies relevant patterns such as style, subject, tone, structure, and expected media format.",
 
-        workflowStep3Title: "Output Generation",
+        workflowStep3Title: "Content Generation",
         workflowStep3Text:
-            "A new image, audio clip, video, or text output is generated based on the request and learned knowledge.",
+            "A new output is produced, such as an image, voice clip, music segment, short video, or combined multimedia element.",
 
-        workflowStep4Title: "Refinement and Iteration",
+        workflowStep4Title: "Review and Refinement",
         workflowStep4Text:
-            "The user can refine the prompt or improve the result several times to achieve a more accurate and higher-quality output.",
+            "The result is reviewed, improved, compressed, and prepared for use on the web through suitable formats and optimized file sizes.",
 
-        quickGalleryTitle: "Quick Output Gallery",
+        quickGalleryTitle: "Quick Output Preview",
         quickGalleryText:
-            "This section presents initial examples of output types that generative AI technologies can produce in multimedia contexts.",
+            "This section provides a quick look at the main media categories covered by the website: generated visuals, synthetic or edited audio, and short explanatory video content.",
 
-        sectionsTitle: "Explore the Website Sections",
+        sectionsTitle: "Explore the Main Sections",
         sectionsText:
-            "The website provides several focused pages explaining generative AI applications in images, audio, and video, along with challenges, gallery items, and references.",
+            "The website is organized into specialized pages that explain the concept of generative AI, its working mechanism, its applications in images, audio, and video, and the challenges related to its use.",
+
         quickGalleryCard1Label: "AI Generated Image",
-        quickGalleryCard1Title: "Future Scene",
+        quickGalleryCard1Title: "Futuristic Visual Scene",
         quickGalleryCard1Description:
-            "An example of a digital visual generated from a text prompt using generative AI tools.",
+            "A visual example representing how text prompts can be transformed into digital scenes suitable for educational and creative media projects.",
 
         quickGalleryCard2Label: "Synthetic Audio",
         quickGalleryCard2Title: "Educational Voice-over",
         quickGalleryCard2Description:
-            "An example of using generative models to create voice-over for educational and media content.",
+            "An audio example representing how narration can be generated or processed to support explanations, presentations, and video content.",
 
         quickGalleryCard3Label: "Short Video",
         quickGalleryCard3Title: "Visual Explainer Clip",
         quickGalleryCard3Description:
-            "An initial example of producing a short video or enhancing a visual scene for multimedia experiences.",
+            "A short video example showing how motion, visual design, and captions can be combined to explain a technical concept.",
     },
+
     about: {
-        heroTitle: "What is Generative AI?",
+        heroTitle: "Introduction to Generative Artificial Intelligence",
         heroText:
-            "Generative AI is a branch of artificial intelligence that focuses on producing new content rather than only analyzing or classifying data. These systems can generate text, images, audio, and video based on patterns learned during training.",
-        definitionTitle: "A Simple Definition",
+            "Generative Artificial Intelligence is a branch of artificial intelligence focused on producing new content rather than only classifying or analyzing existing data. It can generate text, images, audio, and video by learning patterns from large collections of examples and applying those patterns to new user requests.",
+
+        definitionTitle: "Concept and Definition",
         definitionText:
-            "Generative AI relies on advanced models trained on massive amounts of data, then uses that knowledge to produce new content that resembles what it learned without being an exact copy. For this reason, it is considered one of the most important modern technologies in digital creativity and multimedia.",
+            "Generative AI relies on machine learning models trained on extensive datasets. During training, these models learn relationships between words, shapes, colors, sounds, motion, and meaning. After training, they can create new outputs that resemble the learned patterns while still being newly produced. This ability makes generative AI especially important in digital creativity and multimedia systems.",
+
         differenceTitle: "How It Differs from Traditional AI",
         differenceText:
-            "Traditional AI focuses on classification, prediction, and decision-making, such as image recognition or spam detection. Generative AI, on the other hand, focuses on creating new content such as writing an article, generating an image, or producing audio and video.",
-        examplesTitle: "Examples of Its Use",
+            "Traditional AI is usually designed to recognize, classify, recommend, or predict. For example, it may detect objects in an image or classify a message as spam. Generative AI goes further by producing new material. It can write a paragraph, generate an illustration, create a voice narration, or assist in producing a video scene. This makes it closer to creative production than simple data analysis.",
+
+        examplesTitle: "Practical Applications",
         examplesText:
-            "Applications of generative AI have expanded across many fields and are now present in daily life as well as in creative industries.",
-        examplesCard1Title: "Visual Design",
+            "Generative AI appears in many areas of multimedia work. It helps designers create visual drafts, educators prepare explanatory materials, content creators produce narration and visuals, and developers build richer user experiences for websites and applications.",
+
+        examplesCard1Title: "Image and Visual Design",
         examplesCard1Text:
-            "It is used to generate images, design posters, create backgrounds, and enhance graphical elements quickly.",
-        examplesCard2Title: "Audio Production",
+            "It supports the creation of illustrations, posters, web banners, concept art, and visual assets. It can also enhance existing images by improving clarity, lighting, colors, and composition.",
+
+        examplesCard2Title: "Audio Generation and Processing",
         examplesCard2Text:
-            "It supports voice-over generation, music creation, and sound effects production used in digital projects.",
-        examplesCard3Title: "Visual Content",
+            "It can create voice-over narration, generate simple music pieces, clean recorded audio, and produce sound effects that improve the quality of multimedia presentations.",
+
+        examplesCard3Title: "Video and Motion Content",
         examplesCard3Text:
-            "It is used to produce short videos, animate scenes, and improve the quality of visual materials in educational and media applications.",
-        importanceTitle: "Its Importance in Multimedia",
+            "It supports short video production, scene enhancement, animated visual explanations, caption creation, and faster preparation of educational or promotional video content.",
+
+        importanceTitle: "Importance in Multimedia Systems",
         importanceText:
-            "Generative AI is important because it accelerates content creation, supports creativity, reduces initial production costs, and provides new possibilities for designers, creators, and students building integrated visual and audio projects.",
+            "In multimedia systems, generative AI reduces the time needed to prepare initial content, increases the number of possible creative directions, and helps transform ideas into presentable prototypes. It does not replace human review and design judgment, but it gives creators a powerful starting point for producing richer digital experiences.",
     },
+
     howItWorksPage: {
         heroTitle: "How Does Generative AI Work?",
         heroText:
-            "The production of generative content goes through several stages, starting with model training on data, then receiving the user request, analyzing the input, and finally generating the required output based on learned patterns.",
-        trainingTitle: "The Training Stage",
+            "Generative AI works through a sequence of technical and creative stages. A model is first trained on large datasets, then it receives a user input, analyzes the requested task, generates an output, and allows the result to be improved through refinement.",
+
+        trainingTitle: "Training on Large Datasets",
         trainingText:
-            "At first, the model is trained on large amounts of text, images, audio clips, or videos. During this phase, it learns relationships, structures, and patterns within the data, which later enables it to produce new content.",
-        processTitle: "Output Creation Stages",
+            "Training is the stage in which the model learns from many examples. For text models, the data may include articles, books, and web content. For image models, the data may include visual examples with descriptions. For audio and video models, the data may include recordings, speech, music, movement, frames, and timing patterns. The goal is not to memorize one item, but to learn relationships and structures that can later be used to generate new content.",
+
+        processTitle: "Main Generation Process",
         processText:
-            "When the user writes a request, the model analyzes the words or inputs, connects them to what it learned during training, and then generates a new output that can be refined and adjusted.",
+            "After training, the model can respond to a prompt or input. The quality of the result depends on the clarity of the request, the type of model, the training data, and the refinement steps applied after generation.",
+
         step1Title: "Data and Training",
         step1Text:
-            "The model learns from many diverse examples to understand patterns in language, images, or audio.",
+            "The model learns patterns from large and diverse data sources, including language, visual structures, audio signals, and video sequences.",
+
         step2Title: "User Input",
         step2Text:
-            "The user writes a prompt or text instruction describing the idea or required content type.",
+            "The user provides a prompt, image reference, audio instruction, or video idea that describes the required output.",
+
         step3Title: "Generation",
         step3Text:
-            "The model creates a new output based on learned patterns and the details of the current request.",
-        step4Title: "Review and Refinement",
+            "The model produces a new output based on the request and the patterns it learned during training.",
+
+        step4Title: "Refinement",
         step4Text:
-            "The user can modify the request or retry several times to obtain a more accurate and suitable result.",
-        infographicTitle: "A Simplified Visual Summary",
+            "The output is reviewed, adjusted, regenerated, or edited until it becomes suitable for the intended use.",
+
+        infographicTitle: "Simplified Workflow",
         infographicText:
-            "The process can be summarized in four main stages: model training, prompt reception, output generation, and iterative refinement until the desired result is reached.",
+            "The workflow can be understood as a cycle: training builds the model’s knowledge, the prompt guides the direction, generation creates the first result, and refinement improves the final output. This cycle is common in image creation, voice generation, video editing, and other multimedia production tasks.",
     },
 
     imagesPage: {
         heroTitle: "Applications of Generative AI in Images",
         heroText:
-            "Generative AI contributes to creating, enhancing, and transforming digital images in multiple ways, making it a powerful tool in design, advertising, and visual production.",
+            "Images are among the most visible applications of generative AI. Modern tools can create visuals from text, transform existing images, improve quality, modify style, and prepare visual assets for websites, presentations, advertising, and educational content.",
+
         generatedTitle: "Generated Images",
         generatedText:
-            "Generative tools make it possible to create new visuals from text descriptions, with control over artistic style, scene composition, lighting, and required visual elements.",
-        generatedCard1Title: "Imaginary Scenes",
+            "Image generation tools can produce new visuals from a written description. The prompt may define the subject, style, lighting, colors, camera angle, background, and visual mood. This makes the technology useful for concept design, educational illustrations, posters, and quick visual prototyping.",
+
+        generatedCard1Title: "Futuristic and Conceptual Scenes",
         generatedCard1Text:
-            "Future-oriented, artistic, or educational scenes can be created quickly without capturing them physically.",
-        generatedCard2Title: "Creative Designs",
+            "Generative AI can produce scenes that are difficult or expensive to photograph in real life, such as futuristic environments, abstract technology concepts, scientific visualizations, and imaginative educational visuals.",
+
+        generatedCard2Title: "Creative Design Assets",
         generatedCard2Text:
-            "These technologies are used in posters, covers, backgrounds, and illustrative assets for websites and applications.",
-        beforeAfterTitle: "Before / After Examples",
+            "Generated visuals can be used as starting points for posters, web sections, hero images, backgrounds, icons, presentation graphics, and visual storytelling elements.",
+
+        beforeAfterTitle: "Before and After Enhancement",
         beforeAfterText:
-            "AI tools can also improve original images through upscaling, color correction, object removal, and visual detail enhancement.",
-        enhancementTitle: "AI in Image Enhancement",
+            "AI-assisted editing can improve existing images by adjusting contrast, sharpness, color balance, noise, resolution, lighting, and composition. This is useful when original images need to be prepared for web publication or visual presentation.",
+
+        enhancementTitle: "Image Enhancement in Web Projects",
         enhancementText:
-            "Its role is not limited to generation only; it can also support designers in refining and reprocessing visuals for digital publishing.",
+            "For web use, images must be visually clear and technically optimized. After generation or editing, images can be compressed and exported in WEBP or AVIF format to reduce file size while preserving acceptable quality. This improves loading speed and creates a smoother user experience.",
     },
 
     audioPage: {
         heroTitle: "Applications of Generative AI in Audio",
         heroText:
-            "Generative AI can now produce digital voices, voice-over, music, and sound effects that support educational, media, and interactive applications.",
-        useCasesTitle: "Main Audio Use Cases",
+            "Generative AI is increasingly used in audio production, especially for narration, music creation, sound design, and audio enhancement. These capabilities support educational videos, interactive websites, podcasts, presentations, and multimedia learning materials.",
+
+        useCasesTitle: "Audio Production Use Cases",
         useCasesText:
-            "Generative audio applications span multiple fields, from narration and voice-over to music and sound design.",
-        card1Title: "Voice-over",
+            "Audio is essential in multimedia because it adds explanation, rhythm, atmosphere, and emotional tone. AI tools can help produce or improve audio elements when recording resources are limited or when fast prototyping is required.",
+
+        card1Title: "Voice-over Narration",
         card1Text:
-            "Clear digital voice-over can be created for educational videos, presentations, and explanatory content.",
-        card2Title: "Generative Music",
+            "Text-to-speech tools can convert written scripts into clear narration. This is useful for explaining technical concepts, adding accessibility support, and creating voice tracks for short videos or presentations.",
+
+        card2Title: "Music and Background Atmosphere",
         card2Text:
-            "Generative models can help produce short music pieces that support videos, websites, and creative projects.",
-        card3Title: "Sound Effects",
+            "AI-generated music can provide short background tracks for videos, website sections, or educational content. The tone can be calm, futuristic, dramatic, or energetic depending on the purpose of the project.",
+
+        card3Title: "Sound Effects and Audio Enhancement",
         card3Text:
-            "Ambient sounds and audio effects can be created to add value to visual and interactive experiences.",
-        sampleTitle: "Experimental Audio Sample",
+            "Sound effects can support animations, transitions, and interactive elements. Audio enhancement tools can also reduce noise, improve clarity, and make recorded speech easier to understand.",
+
+        sampleTitle: "Audio Sample",
         sampleText:
-            "A short audio clip can be displayed inside the website to represent the idea of generated or enhanced audio in multimedia environments.",
+            "The audio sample represents the role of sound in multimedia communication. A short narration or background sound can make the website experience more engaging and help visitors understand the subject faster.",
     },
 
     videoPage: {
         heroTitle: "Applications of Generative AI in Video",
         heroText:
-            "Generative AI offers advanced capabilities for creating short videos, animating elements, improving scenes, and supporting editing and visual production workflows.",
-        usesTitle: "Uses in Video Production",
+            "Video combines image, motion, sound, timing, and text. Generative AI can support video production by creating short clips, assisting with editing, generating visual scenes, enhancing footage, and adding captions or explanatory elements.",
+
+        usesTitle: "Video Production Use Cases",
         usesText:
-            "Generative video applications range across educational, marketing, and creative content, with strong emphasis on speed and stylistic variation.",
+            "In multimedia projects, video is effective because it presents information through movement and sequence. AI-assisted video tools can help transform ideas into short visual explanations even when production time and resources are limited.",
+
         card1Title: "Short Educational Videos",
         card1Text:
-            "Short visual scenes can be created to explain an idea or concept quickly and clearly.",
+            "AI-assisted video can be used to create short clips that explain a concept, introduce a technology, or summarize a process in a clear and visually engaging way.",
+
         card2Title: "Scene Enhancement",
         card2Text:
-            "Lighting, quality, and transitions can be improved in video content using AI-assisted workflows.",
-        card3Title: "Editing and Production",
+            "Existing video material can be improved through color correction, lighting adjustment, stabilization, captioning, and visual cleanup to make it more suitable for web presentation.",
+
+        card3Title: "Editing and Production Support",
         card3Text:
-            "Modern tools help accelerate parts of editing, composition, and the addition of explanatory visual elements.",
-        sampleTitle: "Experimental Video Example",
+            "AI tools can support editing by generating captions, suggesting cuts, creating visual transitions, producing background scenes, and preparing draft versions that can later be refined manually.",
+
+        sampleTitle: "Video Sample",
         sampleText:
-            "A short video with synchronized explanatory text can be embedded to highlight the educational goal of the project.",
+            "The video sample demonstrates how motion, visuals, narration, and synchronized text can work together to explain generative AI in a more engaging form than static text alone.",
     },
 
     mediaLabels: {
@@ -222,100 +256,125 @@ const en: Translation = {
     },
 
     challengesPage: {
-        heroTitle: "Pros, Cons, and Challenges",
+        heroTitle: "Advantages, Limitations, and Challenges",
         heroText:
-            "Although generative AI provides major benefits in supporting creativity and accelerating production, its use is accompanied by technical, ethical, and professional challenges that should be understood in a balanced way.",
+            "Generative AI provides valuable opportunities for multimedia production, but it also introduces technical, ethical, and social challenges. Understanding both sides is essential for using these tools responsibly.",
+
         prosTitle: "Advantages",
         prosText:
-            "Generative AI helps improve workflow efficiency and expand creative possibilities in digital projects.",
+            "When used carefully, generative AI can improve productivity, support creativity, and help students and creators produce high-quality prototypes in less time.",
+
         pro1Title: "Faster Production",
         pro1Text:
-            "It reduces the time needed to produce initial images, texts, audio clips, and video materials.",
-        pro2Title: "Creative Support",
+            "It reduces the time required to prepare drafts, visual concepts, audio samples, and early video prototypes, allowing more time for review and improvement.",
+
+        pro2Title: "Creative Exploration",
         pro2Text:
-            "It provides diverse ideas and visual or audio suggestions that can be refined and developed further.",
-        pro3Title: "Lower Initial Costs",
+            "It allows creators to test multiple styles, ideas, and directions quickly before choosing the most suitable final approach.",
+
+        pro3Title: "Accessible Production Tools",
         pro3Text:
-            "It gives students, beginners, and creators faster and lower-cost ways to produce early prototypes.",
-        consTitle: "Disadvantages",
+            "It gives students and small teams access to tools that were previously limited to specialized studios, such as image generation, voice creation, and advanced editing support.",
+
+        consTitle: "Limitations",
         consText:
-            "These technologies also come with limitations and risks that should be considered during use and publication.",
-        con1Title: "Possible Inaccuracy",
+            "Despite its usefulness, generative AI output is not automatically reliable or complete. Human review remains necessary to ensure accuracy, quality, and suitability.",
+
+        con1Title: "Accuracy and Quality Issues",
         con1Text:
-            "Models may sometimes produce inaccurate output or include visual, linguistic, or logical errors.",
-        con2Title: "Rights and Ownership Issues",
+            "Generated content may include visual errors, incorrect details, unnatural audio, weak motion, or information that sounds correct but is inaccurate.",
+
+        con2Title: "Intellectual Property Concerns",
         con2Text:
-            "Some tools raise questions related to intellectual property and the origin of training data.",
-        con3Title: "Overdependence",
+            "Questions may arise regarding the training data, ownership of generated outputs, similarity to existing works, and the legal use of generated media in public projects.",
+
+        con3Title: "Overreliance on Automation",
         con3Text:
-            "Excessive reliance may reduce the role of human skill and personal creativity if not used carefully.",
-        ethicsTitle: "Ethics and Future Challenges",
+            "Depending too heavily on AI tools can weaken original thinking, design judgment, and technical skill if the user accepts results without analysis or editing.",
+
+        ethicsTitle: "Ethical Use",
         ethicsText:
-            "Ethical challenges include deepfakes, credibility, misinformation, and the possibility of using generated content irresponsibly. These technologies should therefore be approached with transparency, review, and awareness.",
+            "Responsible use requires transparency, source awareness, respect for rights, and careful review before publication. Generated media can be powerful, but it may also be misused for misinformation, fake identities, manipulated images, or misleading video content. For this reason, AI-generated outputs should be clearly reviewed and used within an ethical framework.",
     },
 
     galleryPage: {
-        heroTitle: "Gallery of Models and Outputs",
+        heroTitle: "Gallery of Multimedia Outputs",
         heroText:
-            "This gallery gathers various examples of images, audio, and video to demonstrate how generative AI can be used in multimedia projects.",
-        imagesTitle: "Image Samples",
+            "The gallery presents a collection of visual, audio, and video examples that demonstrate how generative AI can support multimedia projects. Each item is categorized according to its production method, such as generated, assisted, or digitally enhanced.",
+
+        imagesTitle: "Image Outputs",
         imagesText:
-            "This section includes examples of generated, enhanced, or AI-assisted visuals.",
-        audioTitle: "Audio Samples",
+            "This section includes generated and enhanced visuals prepared for web presentation. The examples demonstrate how AI can support concept art, poster design, visual explanation, and image improvement.",
+
+        audioTitle: "Audio Outputs",
         audioText:
-            "This section includes examples of voice-over and audio clips that can be used in educational or media content.",
-        videoTitle: "Video Samples",
+            "This section presents audio examples such as narration, sound effects, or background sound elements that can strengthen the educational value of multimedia content.",
+
+        videoTitle: "Video Outputs",
         videoText:
-            "This section contains illustrative examples of short videos that can be created or improved using modern tools.",
-        item1Title: "Future Poster",
+            "This section includes short visual examples that combine motion, captions, and media design to explain ideas more dynamically.",
+
+        item1Title: "Futuristic AI Poster",
         item1Text:
-            "An example of a visual design created using image generation tools with some additional design refinement.",
-        item2Title: "Enhanced Image",
+            "A poster-style visual representing the relationship between artificial intelligence, digital media, and futuristic interface design.",
+
+        item2Title: "Enhanced Web Image",
         item2Text:
-            "An example of an original image whose colors and clarity were improved for web presentation.",
-        item3Title: "Voice-over Sample",
+            "An image prepared for online display through improvements in clarity, color balance, contrast, and overall visual quality.",
+
+        item3Title: "Narration Track",
         item3Text:
-            "An example of an audio sample that can be used to explain a concept or present educational content.",
-        item4Title: "Sound Effect",
+            "A short voice-over sample designed to support an educational explanation and improve accessibility for visitors.",
+
+        item4Title: "Digital Sound Effect",
         item4Text:
-            "An example of a short audio element that adds value to an interactive or visual scene.",
-        item5Title: "Short Educational Video",
+            "A compact audio element that can be used to support transitions, interface actions, or multimedia scenes.",
+
+        item5Title: "Educational Video Clip",
         item5Text:
-            "An example of a short video explaining a specific idea with synchronized explanatory text.",
-        item6Title: "Enhanced Scene",
+            "A short video concept that presents a technical idea using motion, visual composition, and explanatory text.",
+
+        item6Title: "Enhanced Visual Scene",
         item6Text:
-            "An example of a video or visual scene that has been digitally enhanced using editing or intelligent support tools.",
+            "A video or image-based scene improved through editing, color adjustment, composition enhancement, or AI-assisted processing.",
     },
 
     projectPage: {
-        heroTitle: "About the Project and References",
+        heroTitle: "About the Project",
         heroText:
-            "This page presents an overview of the project goals, the tools used in building it, the content generated or enhanced with AI, and a short list of references.",
+            "GenMedia AI is a university web project designed to introduce generative artificial intelligence through a static multimedia website. The project focuses on explaining the concept, showing practical applications, presenting media examples, and discussing the opportunities and risks related to AI-generated content.",
+
         goalsTitle: "Project Goals",
         goalsText:
-            "The project aims to introduce visitors to generative AI and its applications in multimedia through a static website rich in images, audio, and video, with a modern and user-friendly interface.",
-        toolsTitle: "Tools Used",
+            "The project aims to build a clear educational experience that helps visitors understand generative AI and its role in multimedia systems. It presents the topic through structured pages, bilingual content, dark and light display modes, responsive layouts, and optimized media elements prepared for web use.",
+
+        toolsTitle: "Development and Production Tools",
         toolsText:
-            "The project relied on a set of programming and design tools to build the website, organize its content, and present it visually in a web-appropriate format.",
+            "The website was built using modern front-end tools and organized into reusable components. The development process focused on structure, readability, visual consistency, responsive behavior, and efficient media presentation.",
+
         toolsCard1Title: "Next.js and React",
         toolsCard1Text:
-            "They were used to build the website pages, organize the interface, and apply a modern and fast structure.",
+            "Next.js and React were used to build the static website structure, manage page routing, create reusable interface components, and organize the project into maintainable sections.",
+
         toolsCard2Title: "Tailwind CSS",
         toolsCard2Text:
-            "It was used to style the site and create a responsive interface that supports both dark and light modes.",
-        toolsCard3Title: "AI Tools",
+            "Tailwind CSS was used to design the layout, spacing, colors, cards, responsive grids, navigation elements, and dark/light visual styles across the website.",
+
+        toolsCard3Title: "Generative AI Tools",
         toolsCard3Text:
-            "AI tools were used to generate or suggest part of the visual content, text, or early creative ideas.",
-        aiContentTitle: "AI-Generated or AI-Enhanced Content",
+            "AI tools were used as part of the creative production workflow for generating visual ideas, preparing media concepts, and supporting the creation of image, audio, and video examples.",
+
+        aiContentTitle: "AI-Supported Media Production",
         aiContentText:
-            "The report should clearly indicate which elements were generated or enhanced using AI tools, such as some visuals, early prototypes, or suggested text that was later reviewed and edited.",
-        referencesTitle: "References",
+            "Several media elements in the project were prepared with the support of generative AI tools, then reviewed, selected, optimized, and integrated into the website. This workflow reflects a practical use of AI as an assistant in content production rather than a replacement for human organization, editing, and evaluation.",
+
+        referencesTitle: "References and Learning Sources",
         referencesText:
-            "Scientific, technical, or educational references used to understand the concepts and shape the site content can be listed on this page and in the final report.",
+            "The project content was prepared based on general academic and technical knowledge about artificial intelligence, generative models, multimedia systems, web design principles, and responsible digital media production.",
     },
 
     extra: {
-        references: "Suggested References",
+        references: "References",
         source: "Source",
         note: "Note",
     },
