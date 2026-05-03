@@ -40,16 +40,20 @@ export default function MediaPreviewCard({
         )}
 
         {type === "audio" && src && (
-          <div className="flex h-full w-full items-center justify-center px-4" style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), color-mix(in srgb, var(--accent-2) 16%, transparent), color-mix(in srgb, var(--accent-3) 14%, transparent))" }}>
+          <div
+            className="flex h-full w-full items-center justify-center px-4"
+            style={{
+              background:
+                "linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), color-mix(in srgb, var(--accent-2) 16%, transparent), color-mix(in srgb, var(--accent-3) 14%, transparent))",
+            }}
+          >
             <audio controls controlsList="nodownload" preload="metadata" className="w-full">
               <source src={src} type="audio/mpeg" />
             </audio>
           </div>
         )}
 
-        {!src && (
-          <div className="h-full w-full bg-gradient-to-br from-cyan-500/20 via-violet-500/20 to-emerald-500/20" />
-        )}
+        {!src && <div className="h-full w-full border" style={{ borderColor: "var(--border)" }} />}
       </div>
 
       {/* CONTENT */}

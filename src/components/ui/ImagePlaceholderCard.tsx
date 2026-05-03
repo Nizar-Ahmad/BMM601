@@ -11,7 +11,7 @@ export default function ImagePlaceholderCard({
 }) {
   return (
     <div className="surface-card surface-card-hover overflow-hidden rounded-2xl">
-      <div className="h-56 bg-gradient-to-br from-cyan-500/20 via-violet-500/20 to-emerald-500/20" />
+      <div className="h-56 border-b" style={{ borderColor: "var(--border)" }} />
       <div className="p-6">
         <LabelBadge text={label} />
         <h3 className="mt-4 text-xl font-bold">{title}</h3>

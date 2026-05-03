@@ -10,11 +10,17 @@ export default function HeroSection() {
 
   return (
     <section className="relative overflow-hidden py-14 sm:py-18 lg:py-20">
-      <div className="absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent" />
+      <div
+        className="absolute inset-x-0 top-0 -z-10 h-px"
+        style={{
+          background:
+            "linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 44%, transparent), transparent)",
+        }}
+      />
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
           <div className="space-y-6">
-            <span className="inline-flex rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-[0.18em]" style={{ borderColor: "var(--border)", background: "var(--card)", color: "var(--accent)" }}>
+            <span className="inline-flex rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-[0.18em]" style={{ borderColor: "var(--border)", color: "var(--accent)" }}>
               GenMedia AI
             </span>
 

@@ -6,13 +6,7 @@ export default function HighlightBlock({
   text: string;
 }) {
   return (
-    <div
-      className="surface-card rounded-2xl p-6 sm:p-8"
-      style={{
-        background:
-          "linear-gradient(135deg, color-mix(in srgb, var(--accent) 9%, transparent), color-mix(in srgb, var(--accent-3) 8%, transparent)), var(--card)",
-      }}
-    >
+    <div className="surface-card rounded-2xl p-6 sm:p-8">
       <h3 className="mb-4 text-2xl font-bold">{title}</h3>
       <p className="text-base leading-8" style={{ color: "var(--muted)" }}>{text}</p>
     </div>

@@ -18,7 +18,6 @@ export default function PageHero({
               className="inline-flex rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-[0.18em]"
               style={{
                 borderColor: "var(--border)",
-                background: "var(--card)",
                 color: "var(--accent)",
               }}
             >
