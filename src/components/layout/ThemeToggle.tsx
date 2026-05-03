@@ -21,20 +21,15 @@ export default function ThemeToggle() {
         : "Dark Mode";
 
   return (
-    <div className="relative group">
+    <div className="group relative">
       <button
         onClick={toggleTheme}
         aria-label={label}
-        className="flex h-10 w-10 items-center justify-center rounded-full border transition hover:scale-105"
-        style={{
-          borderColor: "var(--border)",
-          background: "var(--card)",
-        }}
+        className="surface-card interactive-accent flex h-10 w-10 items-center justify-center rounded-full transition hover:scale-105"
       >
         <FontAwesomeIcon icon={isDark ? faSun : faMoon} className="text-sm" />
       </button>
 
-      {/* Tooltip */}
       <div
         className="pointer-events-none absolute top-full mt-2 whitespace-nowrap rounded-md px-3 py-1 text-xs opacity-0 transition group-hover:opacity-100"
         style={{

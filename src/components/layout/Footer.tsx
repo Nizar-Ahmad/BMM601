@@ -46,23 +46,25 @@ export default function Footer() {
   ];
 
   return (
-    <footer
-      className="mt-20 border-t"
-      style={{ borderColor: "var(--border)" }}
-    >
+    <footer className="mt-20 border-t" style={{ borderColor: "var(--border)" }}>
       <Container className="py-10 sm:py-12">
         <div className="space-y-8">
-          {/* top */}
-          <div className="flex flex-col gap-6 border-b pb-6 sm:pb-8 lg:flex-row lg:items-start lg:justify-between" style={{ borderColor: "var(--border)" }}>
+          <div
+            className="flex flex-col gap-6 border-b pb-6 sm:pb-8 lg:flex-row lg:items-start lg:justify-between"
+            style={{ borderColor: "var(--border)" }}
+          >
             <div className="space-y-2">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400">
+              <p
+                className="text-xs font-semibold uppercase tracking-[0.2em]"
+                style={{ color: "var(--accent)" }}
+              >
                 GenMedia AI
               </p>
               <h2 className="text-xl font-bold">SVU S25 ITE BMM601</h2>
             </div>
 
             <div className="space-y-1 text-sm">
-              <p className="opacity-60">
+              <p style={{ color: "var(--muted)" }}>
                 {isArabic ? "المشرف" : "Supervisor"}
               </p>
               <p className="font-medium">
@@ -73,31 +75,36 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* team */}
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] opacity-70">
+            <h3
+              className="text-sm font-semibold uppercase tracking-[0.18em]"
+              style={{ color: "var(--muted)" }}
+            >
               {isArabic ? "فريق العمل" : "Project Team"}
             </h3>
 
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
-              {students.map((student, index) => (
+              {students.map((student) => (
                 <div
-                  key={index}
-                  className="flex items-center justify-between gap-4 rounded-2xl border px-4 py-3"
-                  style={{ borderColor: "var(--border)" }}
+                  key={student.id}
+                  className="surface-card flex items-center justify-between gap-4 rounded-2xl px-4 py-3"
                 >
                   <span className="text-sm font-medium">
                     {isArabic ? student.ar : student.en}
                   </span>
 
-                  <span className="text-xs opacity-60">{student.id}</span>
+                  <span className="text-xs" style={{ color: "var(--muted)" }}>
+                    {student.id}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* bottom */}
-          <div className="flex flex-col gap-2 border-t pt-5 text-xs opacity-60 sm:flex-row sm:items-center sm:justify-between" style={{ borderColor: "var(--border)" }}>
+          <div
+            className="flex flex-col gap-2 border-t pt-5 text-xs sm:flex-row sm:items-center sm:justify-between"
+            style={{ borderColor: "var(--border)", color: "var(--muted)" }}
+          >
             <p>© {new Date().getFullYear()} GenMedia AI</p>
             <p>
               {isArabic

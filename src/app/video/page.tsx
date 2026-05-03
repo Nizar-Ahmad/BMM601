@@ -5,6 +5,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import HighlightBlock from "@/components/ui/HighlightBlock";
 import InfoCard from "@/components/ui/InfoCard";
 import VideoSampleCard from "@/components/ui/VideoSampleCard";
+import PageHero from "@/components/ui/PageHero";
 import { useLanguage } from "@/context/LanguageContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,17 +19,7 @@ export default function VideoPage() {
 
   return (
     <>
-      <section className="py-16 sm:py-20">
-        <Container className="space-y-6">
-          <h1 className="max-w-4xl text-4xl font-extrabold leading-tight sm:text-5xl">
-            {t.videoPage.heroTitle}
-          </h1>
-
-          <p className="max-w-4xl text-base leading-8 opacity-85 sm:text-lg">
-            {t.videoPage.heroText}
-          </p>
-        </Container>
-      </section>
+      <PageHero title={t.videoPage.heroTitle} text={t.videoPage.heroText} />
 
       <section className="py-10">
         <Container>

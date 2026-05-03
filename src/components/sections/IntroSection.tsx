@@ -8,7 +8,7 @@ export default function IntroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16">
+    <section className="section-band py-16 sm:py-20">
       <Container>
         <SectionTitle
           title={t.home.introTitle}

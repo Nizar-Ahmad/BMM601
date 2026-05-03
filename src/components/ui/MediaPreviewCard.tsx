@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function MediaPreviewCard({
   title,
   label,
@@ -13,19 +15,17 @@ export default function MediaPreviewCard({
 }) {
   return (
     <div
-      className="overflow-hidden rounded-3xl border"
-      style={{
-        borderColor: "var(--border)",
-        background: "var(--card)",
-      }}
+      className="surface-card surface-card-hover overflow-hidden rounded-2xl"
     >
       {/* MEDIA AREA */}
       <div className="relative flex h-48 items-center justify-center overflow-hidden">
         {type === "image" && src && (
-          <img
+          <Image
             src={src}
             alt={title}
-            className="h-full w-full object-cover"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 33vw"
           />
         )}
 
@@ -34,13 +34,15 @@ export default function MediaPreviewCard({
             src={src}
             className="h-full w-full object-cover"
             controls
+            controlsList="nodownload"
+            preload="metadata"
           />
         )}
 
         {type === "audio" && src && (
-          <div className="flex h-full w-full items-center justify-center px-4" style={{ background: "linear-gradient(135deg, rgba(34, 211, 238, 0.14), rgba(139, 92, 246, 0.14))" }}>
-            <audio controls className="w-full">
-              <source src={src} />
+          <div className="flex h-full w-full items-center justify-center px-4" style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), color-mix(in srgb, var(--accent-2) 16%, transparent), color-mix(in srgb, var(--accent-3) 14%, transparent))" }}>
+            <audio controls controlsList="nodownload" preload="metadata" className="w-full">
+              <source src={src} type="audio/mpeg" />
             </audio>
           </div>
         )}
@@ -52,13 +54,13 @@ export default function MediaPreviewCard({
 
       {/* CONTENT */}
       <div className="p-5">
-        <span className="inline-flex rounded-full bg-cyan-500/15 px-3 py-1 text-xs font-semibold text-cyan-400">
+        <span className="inline-flex rounded-full px-3 py-1 text-xs font-semibold" style={{ background: "color-mix(in srgb, var(--accent) 14%, transparent)", color: "var(--accent)" }}>
           {label}
         </span>
 
         <h3 className="mt-4 text-lg font-bold">{title}</h3>
 
-        <p className="mt-2 text-sm leading-7 opacity-80">
+        <p className="mt-2 text-sm leading-7" style={{ color: "var(--muted)" }}>
           {description}
         </p>
       </div>

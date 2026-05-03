@@ -17,13 +17,7 @@ export default function BeforeAfterCard({
   afterSrc: string;
 }) {
   return (
-    <div
-      className="overflow-hidden rounded-3xl border"
-      style={{
-        borderColor: "var(--border)",
-        background: "var(--card)",
-      }}
-    >
+    <div className="surface-card overflow-hidden rounded-2xl">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div
           className="border-b p-6 md:border-e md:border-b-0"
@@ -59,7 +53,9 @@ export default function BeforeAfterCard({
 
       <div className="border-t p-6" style={{ borderColor: "var(--border)" }}>
         <h3 className="mb-3 text-xl font-bold">{title}</h3>
-        <p className="text-sm leading-7 opacity-80 sm:text-base">{text}</p>
+        <p className="text-sm leading-7 sm:text-base" style={{ color: "var(--muted)" }}>
+          {text}
+        </p>
       </div>
     </div>
   );

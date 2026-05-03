@@ -5,6 +5,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import GalleryGridCard from "@/components/ui/GalleryGridCard";
 import AudioSampleCard from "@/components/ui/AudioSampleCard";
 import VideoSampleCard from "@/components/ui/VideoSampleCard";
+import PageHero from "@/components/ui/PageHero";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function GalleryPage() {
@@ -12,19 +13,7 @@ export default function GalleryPage() {
 
   return (
     <>
-      <section className="py-16 sm:py-20">
-        <Container className="space-y-6">
-
-
-          <h1 className="max-w-4xl text-4xl font-extrabold leading-tight sm:text-5xl">
-            {t.galleryPage.heroTitle}
-          </h1>
-
-          <p className="max-w-4xl text-base leading-8 opacity-85 sm:text-lg">
-            {t.galleryPage.heroText}
-          </p>
-        </Container>
-      </section>
+      <PageHero title={t.galleryPage.heroTitle} text={t.galleryPage.heroText} />
 
       <section className="py-16">
         <Container className="space-y-10">

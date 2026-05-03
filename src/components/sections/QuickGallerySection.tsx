@@ -9,7 +9,7 @@ export default function QuickGallerySection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16">
+    <section className="py-16 sm:py-20">
       <Container className="space-y-10">
         <SectionTitle
           title={t.home.quickGalleryTitle}
@@ -17,7 +17,7 @@ export default function QuickGallerySection() {
           center
         />
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
           <MediaPreviewCard
             label={t.home.quickGalleryCard1Label}
             title={t.home.quickGalleryCard1Title}

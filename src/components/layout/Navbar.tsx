@@ -30,30 +30,34 @@ export default function Navbar() {
 
   return (
     <header
-      className="sticky top-0 z-50 border-b backdrop-blur"
+      className="sticky top-0 z-50 border-b backdrop-blur-xl"
       style={{
         borderColor: "var(--border)",
-        background: "color-mix(in srgb, var(--background) 88%, transparent)",
+        background: "color-mix(in srgb, var(--background) 82%, transparent)",
+        boxShadow: "0 10px 32px rgba(15, 23, 42, 0.06)",
       }}
     >
-      <Container className="py-4">
+      <Container className="py-3">
         <div className="flex items-center justify-between gap-4">
           <Logo />
 
           <div className="hidden items-center gap-3 lg:flex">
-            <nav className="flex flex-wrap items-center gap-4 text-sm">
+            <nav
+              className="flex flex-wrap items-center gap-1 rounded-full border p-1 text-sm"
+              style={{
+                borderColor: "var(--border)",
+                background: "color-mix(in srgb, var(--card) 86%, transparent)",
+              }}
+            >
               {links.map((link) => {
                 const isActive = pathname === link.href;
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`rounded-full px-3 py-2 transition ${
-                      isActive ? "text-cyan-400" : "hover:text-cyan-400"
+                    className={`rounded-full px-3 py-2 font-medium transition ${
+                      isActive ? "nav-link-active" : "nav-link"
                     }`}
-                    style={{
-                      background: isActive ? "rgba(34,211,238,0.08)" : "transparent",
-                    }}
                   >
                     {link.label}
                   </Link>
@@ -70,11 +74,8 @@ export default function Navbar() {
             <ThemeToggle />
             <button
               onClick={() => setIsOpen((prev) => !prev)}
-              className="rounded-full border px-4 py-2 text-sm"
-              style={{
-                borderColor: "var(--border)",
-                background: "var(--card)",
-              }}
+              className="surface-card flex h-10 w-10 items-center justify-center rounded-full text-sm"
+              aria-label="Toggle navigation"
             >
               <FontAwesomeIcon icon={isOpen ? faXmark : faBars} />
             </button>
@@ -83,11 +84,7 @@ export default function Navbar() {
 
         {isOpen && (
           <div
-            className="mt-4 rounded-3xl border p-4 lg:hidden"
-            style={{
-              borderColor: "var(--border)",
-              background: "var(--card)",
-            }}
+            className="surface-card mt-4 rounded-2xl p-3 lg:hidden"
           >
             <nav className="grid grid-cols-1 gap-2">
               {links.map((link) => {
@@ -97,12 +94,9 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`rounded-2xl px-4 py-3 text-sm font-medium transition ${
-                      isActive ? "text-cyan-400" : "hover:text-cyan-400"
+                    className={`rounded-xl px-4 py-3 text-sm font-medium transition ${
+                      isActive ? "nav-link-active" : "nav-link"
                     }`}
-                    style={{
-                      background: isActive ? "rgba(34,211,238,0.08)" : "transparent",
-                    }}
                   >
                     {link.label}
                   </Link>

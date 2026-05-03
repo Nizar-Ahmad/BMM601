@@ -20,7 +20,7 @@ export default function SiteSectionsPreview() {
   ];
 
   return (
-    <section className="py-16 pb-24">
+    <section className="section-band py-16 pb-24 sm:py-20">
       <Container className="space-y-10">
         <SectionTitle
           title={t.home.sectionsTitle}
@@ -33,11 +33,7 @@ export default function SiteSectionsPreview() {
             <Link
               key={section.href}
               href={section.href}
-              className="rounded-2xl border p-5 text-center font-semibold transition duration-300 hover:-translate-y-1 hover:text-cyan-400"
-              style={{
-                borderColor: "var(--border)",
-                background: "var(--card)",
-              }}
+              className="surface-card surface-card-hover interactive-accent rounded-2xl p-5 text-center font-semibold"
             >
               {section.label}
             </Link>

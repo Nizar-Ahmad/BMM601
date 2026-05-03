@@ -3,9 +3,9 @@
 import Container from "@/components/layout/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import HighlightBlock from "@/components/ui/HighlightBlock";
-import InfoCard from "@/components/ui/InfoCard";
 import ImageCard from "@/components/ui/ImageCard";
 import BeforeAfterCard from "@/components/ui/BeforeAfterCard";
+import PageHero from "@/components/ui/PageHero";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function ImagesPage() {
@@ -13,17 +13,7 @@ export default function ImagesPage() {
 
   return (
     <>
-      <section className="py-16 sm:py-20">
-        <Container className="space-y-6">
-          <h1 className="max-w-4xl text-4xl font-extrabold leading-tight sm:text-5xl">
-            {t.imagesPage.heroTitle}
-          </h1>
-
-          <p className="max-w-4xl text-base leading-8 opacity-85 sm:text-lg">
-            {t.imagesPage.heroText}
-          </p>
-        </Container>
-      </section>
+      <PageHero title={t.imagesPage.heroTitle} text={t.imagesPage.heroText} />
 
       <section className="py-10">
         <Container>
