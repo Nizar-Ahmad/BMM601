@@ -73,13 +73,13 @@ export default function GalleryPage() {
               label={t.mediaLabels.sampleAudio}
               title={t.galleryPage.item3Title}
               text={t.galleryPage.item3Text}
-              src="/audio/sample-audio.mp3"
+              src="/audio/sample3.mp3"
             />
             <AudioSampleCard
               label={t.mediaLabels.assisted}
               title={t.galleryPage.item4Title}
               text={t.galleryPage.item4Text}
-              src="/audio/sample-audio.mp3"
+              src="/audio/sample4.mp3"
             />
           </div>
         </Container>
@@ -98,13 +98,13 @@ export default function GalleryPage() {
               label={t.mediaLabels.sampleVideo}
               title={t.galleryPage.item5Title}
               text={t.galleryPage.item5Text}
-              src="/video/sample-video.mp4"
+              src="/video/video3.mp4"
             />
             <VideoSampleCard
               label={t.mediaLabels.enhanced}
               title={t.galleryPage.item6Title}
               text={t.galleryPage.item6Text}
-              src="/video/sample-video.mp4"
+              src="/video/video4.mp4"
             />
           </div>
         </Container>

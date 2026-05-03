@@ -79,7 +79,7 @@ export default function VideoPage() {
             label={t.mediaLabels.sampleVideo}
             title={t.videoPage.sampleTitle}
             text={t.videoPage.sampleText}
-            src="/video/sample-video.mp4"
+            src="/video/video3.mp4"
           />
         </Container>
       </section>
