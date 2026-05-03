@@ -13,22 +13,39 @@ export default function AudioSampleCard({
 }) {
   return (
     <div
-      className="rounded-3xl border p-6"
-      style={{
-        borderColor: "var(--border)",
-        background: "var(--card)",
-      }}
+      className="surface-card surface-card-hover rounded-2xl p-6"
     >
       <LabelBadge text={label} />
       <h3 className="mt-4 text-xl font-bold">{title}</h3>
-      <p className="mt-3 text-sm leading-7 opacity-80 sm:text-base">{text}</p>
+      <p className="mt-3 text-sm leading-7 sm:text-base" style={{ color: "var(--muted)" }}>
+        {text}
+      </p>
 
-      <div className="mt-5 h-20 rounded-2xl bg-gradient-to-r from-cyan-500/15 via-violet-500/15 to-emerald-500/15" />
+      <div className="audio-player-panel mt-5 rounded-2xl p-4 sm:p-5">
+        <div className="mb-4 flex h-10 items-end gap-1.5 opacity-70" aria-hidden="true">
+          {[24, 34, 18, 40, 28, 46, 22, 36, 30, 44, 20, 32].map((height, index) => (
+            <span
+              key={index}
+              className="w-full rounded-full"
+              style={{
+                height,
+                background:
+                  "linear-gradient(180deg, var(--accent), var(--accent-3))",
+              }}
+            />
+          ))}
+        </div>
 
-      <audio controls className="mt-5 w-full">
-        <source src={src} type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+        <audio
+          controls
+          controlsList="nodownload"
+          preload="metadata"
+          className="w-full"
+        >
+          <source src={src} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
   );
 }

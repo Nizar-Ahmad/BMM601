@@ -15,13 +15,7 @@ export default function ImageCard({
   alt: string;
 }) {
   return (
-    <div
-      className="overflow-hidden rounded-3xl border"
-      style={{
-        borderColor: "var(--border)",
-        background: "var(--card)",
-      }}
-    >
+    <div className="surface-card surface-card-hover overflow-hidden rounded-2xl">
       <div className="relative h-56 w-full">
         <Image
           src={src}
@@ -35,7 +29,9 @@ export default function ImageCard({
       <div className="p-6">
         <LabelBadge text={label} />
         <h3 className="mt-4 text-xl font-bold">{title}</h3>
-        <p className="mt-3 text-sm leading-7 opacity-80 sm:text-base">{text}</p>
+        <p className="mt-3 text-sm leading-7 sm:text-base" style={{ color: "var(--muted)" }}>
+          {text}
+        </p>
       </div>
     </div>
   );

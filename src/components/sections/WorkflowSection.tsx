@@ -9,7 +9,7 @@ export default function WorkflowSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16">
+    <section className="section-band py-16 sm:py-20">
       <Container className="space-y-10">
         <SectionTitle
           title={t.home.workflowTitle}
@@ -17,7 +17,7 @@ export default function WorkflowSection() {
           center
         />
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
           <StepCard
             number="1"
             title={t.home.workflowStep1Title}

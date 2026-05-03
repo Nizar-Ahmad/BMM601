@@ -8,15 +8,15 @@ export default function ReferenceList({
       {items.map((item, index) => (
         <div
           key={index}
-          className="rounded-2xl border p-5"
-          style={{
-            borderColor: "var(--border)",
-            background: "var(--card)",
-          }}
+          className="surface-card surface-card-hover rounded-2xl p-5"
         >
           <h3 className="text-lg font-bold">{item.title}</h3>
-          <p className="mt-2 text-sm opacity-80">{item.source}</p>
-          <p className="mt-2 text-sm leading-7 opacity-80">{item.note}</p>
+          <p className="mt-2 text-sm" style={{ color: "var(--accent)" }}>
+            {item.source}
+          </p>
+          <p className="mt-2 text-sm leading-7" style={{ color: "var(--muted)" }}>
+            {item.note}
+          </p>
         </div>
       ))}
     </div>

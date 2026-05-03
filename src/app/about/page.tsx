@@ -4,6 +4,7 @@ import Container from "@/components/layout/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import InfoCard from "@/components/ui/InfoCard";
 import HighlightBlock from "@/components/ui/HighlightBlock";
+import PageHero from "@/components/ui/PageHero";
 import { useLanguage } from "@/context/LanguageContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,18 +18,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <section className="py-16 sm:py-20">
-        <Container className="space-y-6">
-
-          <h1 className="max-w-4xl text-4xl font-extrabold leading-tight sm:text-5xl">
-            {t.about.heroTitle}
-          </h1>
-
-          <p className="max-w-4xl text-base leading-8 opacity-85 sm:text-lg">
-            {t.about.heroText}
-          </p>
-        </Container>
-      </section>
+      <PageHero title={t.about.heroTitle} text={t.about.heroText} />
 
       <section className="py-10">
         <Container>
