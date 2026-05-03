@@ -79,7 +79,7 @@ export default function AudioPage() {
             label={t.mediaLabels.sampleAudio}
             title={t.audioPage.sampleTitle}
             text={t.audioPage.sampleText}
-            src="/audio/sample-audio.mp3"
+            src="/audio/sample2.mp3"
           />
         </Container>
       </section>

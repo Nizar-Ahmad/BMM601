@@ -73,13 +73,13 @@ export default function GalleryPage() {
               label={t.mediaLabels.sampleAudio}
               title={t.galleryPage.item3Title}
               text={t.galleryPage.item3Text}
-              src="/audio/sample-audio.mp3"
+              src="/audio/sample3.mp3"
             />
             <AudioSampleCard
               label={t.mediaLabels.assisted}
               title={t.galleryPage.item4Title}
               text={t.galleryPage.item4Text}
-              src="/audio/sample-audio.mp3"
+              src="/audio/sample4.mp3"
             />
           </div>
         </Container>

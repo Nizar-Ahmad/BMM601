@@ -31,7 +31,7 @@ export default function QuickGallerySection() {
             title={t.home.quickGalleryCard2Title}
             description={t.home.quickGalleryCard2Description}
             type="audio"
-            src="/media/audio1.mp3"
+            src="/audio/sample2.mp3"
           />
 
           <MediaPreviewCard
