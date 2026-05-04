@@ -69,8 +69,8 @@ export default function Footer() {
               </p>
               <p className="font-medium">
                 {isArabic
-                  ? "م. طلال محمد وليد أنطاكية"
-                  : "Eng. Talal Mohammad Waleed Antakieh"}
+                  ? "م. طالل محمد وليد انطاكيه لي"
+                  : "Eng. Talal Mhd Walid Antakia Le"}
               </p>
             </div>
           </div>
